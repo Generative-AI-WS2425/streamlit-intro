@@ -2,7 +2,6 @@
 # EINRICHTUNG
 import streamlit as st
 import pandas as pd
-import altair as alt
 from pathlib import Path
 
 # -------------------#
@@ -32,25 +31,22 @@ df = pd.read_csv(data_path)
 st.title("👋 Hallo, Streamlit!")
 
 
-# Füge Bild hinzu (wir verwenden str (String), um den Bildpfad in einen String umzuwandeln)
+# Bild hinzufügen (wir verwenden str (String), um den Bildpfad in einen String umzuwandeln)
 
-
-# Füge Überschrift hinzu
 
 
 # -------------------#
 # SEITENLEISTE
 
-# Überschrift
+# Überschrift in Seitenleiste einfügen
 
-# Erstelle einen Schieberegler
+# Schieberegler oder anderes Element einfügen
 
-# Zeige die Ausgabe der Schiebereglerauswahl an
 
 # -------------------#
 # HAUPTTEIL
 
-# Zeige DataFrame an
+# DataFrame anzeigen
 
 
 
