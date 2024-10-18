@@ -2,10 +2,10 @@
 
 > Mit [Streamlit](https://streamlit.io) lassen sich Python-Skripte in wenigen Minuten in interaktive Web-Apps verwandeln.  Es werden keine  Erfahrungen mit Frontend-Entwicklung benötigt, alles geschieht in reinem Python.
 
-So startet man die Streamlit-App:
+Streamlit-App starten 🚀:
 
-1. Das GitHub-Repo [streamlit-intro](https://github.com/kirenz/streamlit-intro) klonen oder als zip-Datei herunterladen
-2. Der Ordner `streamlit-intro` wird in VS Code geöffnet.
+1. Das GitHub-Repo [streamlit-intro](https://github.com/kirenz/streamlit-intro) in GitHub forken ⑂ (in der Option für eigene Entwicklung auswählen) oder als zip-Datei 🗂️ herunterladen
+2. Ordner `streamlit-intro` in VS Code öffnen.
 3. Auf die Datei `app.py` klicken.
 
 
