@@ -1,61 +1,61 @@
 # -------------------#
-# SETUP
+# EINRICHTUNG
 import streamlit as st
 import pandas as pd
 import altair as alt
+from pathlib import Path
 
 # -------------------#
-# IMPORT DATA
+# PFADE VORBEREITEN
 
-df = pd.read_csv(
-    "https://raw.githubusercontent.com/kirenz/datasets/master/oecd-new.csv")
+# Ermittle das Verzeichnis des aktuellen Skripts
+script_dir = Path(__file__).parent
+
+# Konstruiere den Pfad zur CSV-Datei
+data_path = script_dir.joinpath("data", "oecd.csv") 
+# Konstruiere den Pfad zur Bilddatei
+image_path = script_dir.joinpath("img", "hdm-logo.jpg") 
+
+# -------------------#
+# DATEN IMPORTIEREN
+
+df = pd.read_csv(data_path)
 
 
 ### -------------------###
-# START OF OUR APP
+# START UNSERER APP
 
 # -------------------#
-# HEADER
+# KOPFZEILE
 
-# Title of our app
-st.title("Hello World")
+# Titel unserer App
 
-# Add image
-st.image('hdm-logo.jpg')
 
-# Add header
-st.header("My Text")
+# Füge Bild hinzu (wir verwenden str (String), um den Bildpfad in einen String umzuwandeln)
 
-# -------------------#
-# SIDEBAR
 
-# Header
-st.sidebar.header("This is my sidebar")
+# Füge Überschrift hinzu
 
-# Make a slider
-satisfaction = st.sidebar.slider('What is your life satisfaction?', 0, 10, 1)
-
-# Show output of slider selection
-st.sidebar.write("My life satisfaction is around ", satisfaction, 'points')
 
 # -------------------#
-# BODY
+# SEITENLEISTE
 
-st.write("Take a look at my data")
-# Show static DataFrame
-st.dataframe(df)
+# Überschrift
 
-st.write("Take a look at my chart")
-# Make a chart with altair
+# Erstelle einen Schieberegler
 
-c = alt.Chart(df).mark_circle().encode(
-    x='life_satisfaction',
-    y='gdp_per_capita',
-    color='country'
-)
+# Zeige die Ausgabe der Schiebereglerauswahl an
 
-# Show plot
-st.altair_chart(c, use_container_width=True)
+# -------------------#
+# HAUPTTEIL
+
+# Zeige statischen DataFrame an
+
+# Erstelle ein Diagramm mit Altair
+
+
+
+# Zeige Diagramm an
 
 ### -------------------###
-# END OF APP
+# ENDE DER APP
