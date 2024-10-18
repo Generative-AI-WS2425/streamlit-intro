@@ -29,6 +29,7 @@ df = pd.read_csv(data_path)
 # KOPFZEILE
 
 # Titel unserer App
+st.title("👋 Hallo, Streamlit!")
 
 
 # Füge Bild hinzu (wir verwenden str (String), um den Bildpfad in einen String umzuwandeln)
@@ -49,13 +50,10 @@ df = pd.read_csv(data_path)
 # -------------------#
 # HAUPTTEIL
 
-# Zeige statischen DataFrame an
-
-# Erstelle ein Diagramm mit Altair
+# Zeige DataFrame an
 
 
 
-# Zeige Diagramm an
 
 ### -------------------###
 # ENDE DER APP
