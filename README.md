@@ -11,34 +11,30 @@ So startet man die Streamlit-App:
 
 ## Windows
 
-4. Anaconda Command Prompt wird gestartet.
-5. Die Anaconda-Umgebung `genai` wird aktiviert:
+4. Anaconda Command Prompt starten.
+5. Anaconda-Umgebung `genai` aktivieren:
 
    ```bash
    conda activate genai
    ```
 
-6. Mit `cd` navigiert man in das Verzeichnis `streamlit-intro`.
-7. Die App wird gestartet:
+6. Mit `cd` in das Verzeichnis `streamlit-intro` navigieren.
+7. App starten:
 
    ```bash
    streamlit run app.py
    ```
 
-
-
-
 ## Mac
 
-
-4. Das integrierte VS Code Terminal wird geöffnet.
-5. Die Anaconda-Umgebung `genai` wird aktiviert:
+4. Integrierte VS Code Terminal öffnen.
+5. Anaconda-Umgebung `genai` aktivieren:
 
    ```bash
    conda activate genai
    ```
 
-6. Die App wird gestartet:
+6. App starten:
 
    ```bash
    streamlit run app.py
